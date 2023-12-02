@@ -1,0 +1,355 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/Poppins-Regular.ttf') format('truetype'); /* Font Poppins Black */
+  /* Atau gunakan url yang sesuai dengan lokasi file font */
+}
+
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url('assets/fonts/Poppins-SemiBold.ttf') format('truetype'); /* Font Poppins Italic */
+  /* Atau gunakan url yang sesuai dengan lokasi file font */
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
+.dashboard-container {
+  display: flex;
+}
+
+.main-sidebar {
+  display: flex;
+}
+
+.sidebar {
+  background: #333;
+  color: #fff;
+  padding-top: 20px;
+  height: 100vh; /* Mengisi layar dari atas sampai bawah */
+}
+
+.user-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-photo {
+  
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Membuat gambar lingkaran */
+}
+
+.user-name{
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+
+.user-email{
+  font-size: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.sidebar-menu {
+  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li:hover {
+  background: #555;
+  
+}
+
+.sidebar-menu li {
+  padding: 10px;
+  border-bottom: 2px solid #555; /* Garis pemisah menu */
+}
+
+.sidebar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.additional-sidebar {
+  /* Sidebar kanan */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #444;
+  width: 100px;
+  flex-shrink: 0;
+  
+}
+
+.overview-btn {
+  
+  padding-block: 10px;
+  padding-inline: 30px;
+  background: #555;
+  color: #fff;
+  text-decoration: none;
+  
+  position: absolute;
+  bottom: 20px; /* Mengatur posisi dari bawah */
+  left: 70px; /* Menggeser ke tengah */
+  transform: translateX(-50%); /* Untuk menengahkan */
+}
+
+.overview-btn:hover {
+  background-color: #FF0000; /* Warna merah ketika dihover */
+}
+
+.dashboard-container {
+  display: flex;
+}
+
+
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.small-image {
+  width: 400px; /* Sesuaikan ukuran gambar yang diinginkan */
+  height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aspek */
+  /* Mengatur margin secara otomatis untuk pemusatan */
+}
+
+
+.visu {
+  width: 450px; /* Sesuaikan ukuran gambar yang diinginkan */
+  height: 250px; /* Biarkan tinggi gambar menyesuaikan proporsi aspek */
+  /* Mengatur margin secara otomatis untuk pemusatan */
+}
+.box-1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  position: absolute;
+  top: 118px;
+  left: 180px;
+  
+}
+
+.box-2 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  position: absolute;
+  left: 820px;
+  top: 180px;
+  
+}
+
+.box-22 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  position: absolute;
+  left: 820px;
+  top: 315px;
+}
+
+.box-33 {
+  position: absolute;
+  top: 350px;
+  left: 1050px;
+}
+
+.box-6 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  position: absolute;
+  left: 820px;
+  top: 450px; /* Nilai top yang lebih besar dari .box-22 */
+  transition: all 0.3s; /* Efek transisi */
+}
+
+
+.box-3 {
+  grid-column: -5 / 3;
+  grid-row: 1 / 2;
+  position: absolute; /* Mengatur posisi absolut agar dapat digeser */
+
+  left:580px; /* Menggeser kotak ke kiri sejauh 20px dari sisi kiri */
+  top: 180px; /
+}
+
+.box-4 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  position: absolute; /* Mengatur posisi absolut agar dapat digeser */
+  left: 530px; /* Menggeser kotak ke kiri sejauh 20px dari sisi kiri */
+  top: 220px; /* Menggeser kotak ke atas sejauh 20px dari bagian atas */
+}
+
+.box-5 {
+  position: absolute;
+  top: 180px;
+  left: 1067px
+}
+
+.athlete-flag {
+  width: 70px;
+  height: 40px;
+  right: 25px;
+    top: 40px;
+}
+
+.athlete-name{
+  font-size: 25px;
+}
+
+.athlete-divider {
+  border: none;
+  border-top: 4px solid #333;
+  width: 100%;
+  margin-top: 0px; /* Add margin to create space between the name and the divider */
+  padding: 10px 0; /* Add padding to create space andbalan, jenis, dan warna garis */
+}
+
+/* Inside the style tag in the head section */
+/* Customize the appearance of the BPM box */
+.bpm-box {
+  width: 180px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  background-color: black; /* Choose a suitable background color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Add rounded corners for a softer look */
+  margin: 20px; /* Adjust the margin as needed for spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.bpm-box:hover {
+  background-color: #59e000; /* Warna merah ketika dihover */
+}
+
+.bpm-box2 {
+  width: 180px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  background-color: black; /* Choose a suitable background color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Add rounded corners for a softer look */
+  margin: 20px; /* Adjust the margin as needed for spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.bpm-box2:hover {
+  background-color: #fe6403; /* Warna merah ketika dihover */
+}
+
+.bpm-box3 {
+  width: 180px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  background-color: black; /* Choose a suitable background color */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Add rounded corners for a softer look */
+  margin: 20px; /* Adjust the margin as needed for spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.bpm-box3:hover {
+  background-color: #f20809; /* Warna merah ketika dihover */
+}
+
+
+/* Style for the BPM label */
+.bpm-label {
+  color: white;
+  font-size: 18px; /* Adjust the font size as needed */
+  margin: 3px; /* Adjust the spacing as needed */
+}
+
+/* Style for the BPM value */
+.bpm-value {
+ color: white;
+ font-size: 30px; /* Adjust the font size as needed */
+ /* Make the value bold for emphasis */
+ margin: 0;
+ font-family: 'PoppinsBold';
+}
+.info-item {
+  font-size: 20px; /* Adjust the font size as needed */
+}
+
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  margin-top: 20px;
+  background: #333; /* Latar belakang elemen tabel */
+  padding: 10px;
+  border: 2px solid #333; /* Warna garis pada border */
+  border-radius: 10px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse; /* Gabungkan border agar lebih rapi */
+}
+
+.table-container td {
+  border: 1px solid #555; /* Warna garis sel di dalam tabel */
+  padding: 10px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Ganti jenis font */
+  color: #fff; /* Warna teks */
+}
+.athlete-details{
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+.main-content{
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+.dashboard-container{
+
+  font-family: 'Poppins', sans-serif;
+}
+.banner-text{
+  font-family: 'PoppinsBold', sans-serif;
+  font-size: 25px;
+  margin-top: -20px;
+  margin-bottom: -15px;
+  color: #fff; /* Ganti warna teks banner */
+}
+.striking-box {
+    font-size: 20px;
+    background-color: #000;
+    padding: 5px 10px;
+    font-family: 'Poppins';
+    border-radius: 10px; /* You can adjust the value to control the roundness */
+    position: absolute;
+    right: 25px;
+    top: 15px;
+}
+
+.athlete-name{
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
